@@ -1,0 +1,15 @@
+fastapi
+uvicorn
+gunicorn
+pandas
+openpyxl
+python-multipart
+numpy
+python-dotenv
+pydantic
+pydantic-settings
+requests
+httpx
+pytz
+duckduckgo-search
+beautifulsoup4
