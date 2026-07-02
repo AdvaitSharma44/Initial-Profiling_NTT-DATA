@@ -77,7 +77,8 @@ async def unhandled_exception_handler(request: Request, exc: Exception) -> JSONR
 
 @app.get("/", response_class=HTMLResponse)
 async def serve_spa() -> FileResponse:
-    index_path = frontend_dir / "index.html"
+    from pathlib import Path
+    index_path = Path("index.html")
     if not index_path.exists():
         message = "Frontend index.html not found."
         logger.error(message)
